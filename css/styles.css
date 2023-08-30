@@ -336,12 +336,10 @@ address {
 }
 
 
-
 .customers-list-item-img {
   width: 100%;
   fill: var(--lightscale);
 }
-
 
 .customers-list-item:hover {
   border: 1px solid var(--cta);
@@ -366,6 +364,16 @@ address {
   flex-basis: calc((100% - 60px) / 3);
 }
 
+.cards {
+  border-bottom: 1px solid var(--accent-cornflower);
+  border-left: 1px solid var(--accent-cornflower);
+  border-right: 1px solid var(--accent-cornflower);
+}
+
+.cards:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .cards .description {
   display: flex;
   flex-direction: column;
@@ -373,9 +381,9 @@ address {
   padding: 32px 20px;
 }
 
-.option .cards {
+.cards{
   background-color: var(--background-white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 2px 2px;
 }
 
 
@@ -406,7 +414,11 @@ address {
   cursor: pointer;
 }
 
-.portfolio-select {
+.portfolio-select-items:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+.portfolio-select {   
   display: flex;
   list-style: none;
   align-content: center;
@@ -428,8 +440,14 @@ address {
 }
 
 .page-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px;
+  display: flex;
+  gap: 50px;
+}
+
+.footerlogo{
+  padding: 0;
+  width: 350px;
 }
 
 .bg-footer {
@@ -442,4 +460,43 @@ address {
   color: var(--accent-color);
   line-height: 1.2;
   margin-top: 16px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-social-title {
+  font-size: 16px;
+  color: var(--background-white);
+}
+
+.footer-social-list {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.footer-social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background: var(--cta);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer-social-list-img {
+  width: 100%;
+  fill: var(--accent-color);
+}
+
+.footer-social-item:hover {
+  background: var(--mint);
 }
