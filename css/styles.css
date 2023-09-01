@@ -40,7 +40,7 @@ ul{
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 img {
@@ -288,15 +288,22 @@ address {
   background: var(--primary);
   border-radius: 50%;
   cursor: pointer;
-}
+} 
 
-.teams-social-list li:hover {
+
+.teams-social-list li:hover{
   background-color: var(--mint);
 }
 
 .social-list-img {
   fill: var(--accent-color);
 }
+
+
+
+
+
+
 
 /*customers*/
 
@@ -446,14 +453,19 @@ address {
 
 
 .page-footer {
-  padding: 60px;
+  padding: 100px 156px;
   display: flex;
   gap: 50px;
 }
 
 .footerlogo{
-  padding: 0;
-  width: 350px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 0;
+  line-height: 1.2;
+  width: 400px;
+
 }
 
 .bg-footer {
@@ -492,6 +504,7 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 30px;
   padding: 8px;
   background: var(--cta);
   border-radius: 50%;
@@ -504,5 +517,9 @@ address {
 }
 
 .footer-social-item:hover {
+  background: var(--mint);
+}
+
+.footer-social-item:focus {
   background: var(--mint);
 }
