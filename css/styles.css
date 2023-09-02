@@ -286,20 +286,24 @@ address {
   gap: 24px;
 }
 
-.social-list-item {
+.social-list-item{
+  list-style: none;
+}
+
+.social-list-item a{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--primary);
   width: 30px;
   height: 30px;
   padding: 8px;
-  background: var(--primary);
   border-radius: 50%;
   cursor: pointer;
 } 
 
 
-.teams-social-list li:hover{
+.teams-social-list a:hover{
   background-color: var(--mint);
 }
 
@@ -307,9 +311,9 @@ address {
   fill: var(--accent-color);
 }
 
-
-
-
+.teams-social-list a:focus{
+  background-color: var(--mint);
+}
 
 
 
@@ -506,7 +510,10 @@ address {
   margin-top: 0;
 }
 
-.footer-social-item {
+.footer-social-item{
+  list-style: none;
+}
+.footer-social-item a{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -522,7 +529,11 @@ address {
   fill: var(--accent-color);
 }
 
-.footer-social-item:hover {
+.footer-social-item a:hover {
+  background: var(--mint);
+}
+
+.footer-social-item a:focus {
   background: var(--mint);
 }
 
