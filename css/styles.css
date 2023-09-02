@@ -119,6 +119,7 @@ address {
 
 .page-header {
   border-bottom: 1px solid #ececec;
+  width: 1440px;
 }
 
 .menu,
@@ -132,11 +133,11 @@ address {
 
 
 .nav-menu {
-  margin-left: 78px;
+  margin-left: 76px;
 }
 
 .contacts-menu {
-  margin-left: 300px;
+  margin-left: 335px;
 }
 
 .nav-menu .item:not(:last-child),
