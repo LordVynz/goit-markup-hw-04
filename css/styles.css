@@ -175,12 +175,15 @@ address {
 
 .bg-hero {
   background-color: var(--background-grey);
-  background: linear-gradient(rgba(71, 72, 80, 0.7), rgba(127, 127, 133, 0.7)),
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46,47,66,0.7)),
       url('../images/hero.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 1440px;
   height: 600px;
-  flex-shrink: 0;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-heading {
@@ -267,7 +270,7 @@ address {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  padding: 32px 24px;
+  padding: 32px 10px;
 }
 
 .task {
@@ -296,27 +299,18 @@ address {
   justify-content: center;
   align-items: center;
   background-color: var(--primary);
-  width: 30px;
-  height: 30px;
-  padding: 8px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   cursor: pointer;
 } 
-
-
-.teams-social-list a:hover{
-  background-color: var(--mint);
-}
-
 .social-list-img {
   fill: var(--accent-color);
 }
-
+.teams-social-list a:hover,
 .teams-social-list a:focus{
   background-color: var(--mint);
 }
-
-
 
 /*customers*/
 
@@ -353,6 +347,7 @@ address {
   justify-content: center;
   align-content: center;
   padding: 15px 25px;
+  cursor: pointer;
 }
 
 
@@ -433,17 +428,13 @@ address {
   cursor: pointer;
 }
 
-.selects:hover {
-  background-color: var(--primary);
-  color: var(--background-white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
+.selects:hover, 
 .selects:focus {
   background-color: var(--primary);
   color: var(--background-white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.08), 0px 2px 1px rgba(0, 0, 0, 0.12);
 }
+
 
 .portfolio-select {   
   display: flex;
@@ -518,7 +509,8 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   padding: 8px;
   background: var(--cta);
   border-radius: 50%;
@@ -530,10 +522,7 @@ address {
   fill: var(--accent-color);
 }
 
-.footer-social-item a:hover {
-  background: var(--mint);
-}
-
+.footer-social-item a:hover,
 .footer-social-item a:focus {
   background: var(--mint);
 }
