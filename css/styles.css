@@ -309,7 +309,7 @@ address {
 }
 .teams-social-list a:hover,
 .teams-social-list a:focus{
-  background-color: var(--mint);
+  background-color: var(--cta);
 }
 
 /*customers*/
